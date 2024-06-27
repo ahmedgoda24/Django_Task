@@ -36,7 +36,7 @@ This is a Bookstore application built with Django and Django REST Framework.
 
 4. **Set up the database:**
 
-    - Ensure PostgreSQL is running and create a database for the project.
+    - Ensure MySQL is running and create a database for the project.
 
     - Update the `DATABASES` setting in `settings.py`:
 
