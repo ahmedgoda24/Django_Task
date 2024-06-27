@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+
+    {% block content %}    
+    <h1>Multiplication Table for {{ number }}</h1>
+    <table border="1 mx-auto">
+        {% for i, value in table.items %}
+        <tr>
+            <td>{{ number }} x {{ i }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}
+

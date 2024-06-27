@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h4>Book Detail</h4>
+        </div>
+        <div class="card-body">
+            <h5>Title: {{ book.title }}</h5>
+            <p><strong>Description:</strong> {{ book.description }}</p>
+            <p><strong>Author:</strong> {{ book.author }}</p>
+            <p><strong>Published Date:</strong> {{ book.published_date }}</p>
+            <a type="button" class="btn btn-primary" href="{% url 'book_list' %}">Back to Book List</a>
+            <a type="button" class="btn btn-warning" href="{% url 'book_update' book.pk %}">Update</a>
+            <a type="button" class="btn btn-danger" href="{% url 'book_delete' book.pk %}">Delete</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
